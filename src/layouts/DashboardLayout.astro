@@ -14,10 +14,7 @@ const isUserLoggedIn = false;
     <script>
         const menuButton = document.getElementById("menu-button");
         const aside = document.getElementById("aside");
-        console.log("Menu Button ", menuButton);
         menuButton?.addEventListener("click", () => {
-            console.log("Menu Icon clicked");
-
             if (aside) {
                 aside.style.display =
                     aside.style.display == "none" ? "block" : "none";

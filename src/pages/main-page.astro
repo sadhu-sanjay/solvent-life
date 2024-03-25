@@ -49,13 +49,15 @@ import { SendIcon } from "~/components/icons/send-icon";
                 placeholder="Type your message..."
             >
             </textarea>
-            <button class="btn p-2 text-gray-200 hover:text-gray-800 absolute right-2 bg-gray-700 dark:gray-200" >
-                <SendIcon classString="w-5 h-5 " /> 
+            <button
+                id="btn-submit"
+                class="btn p-2 text-gray-200 hover:text-gray-800 absolute right-2 bg-gray-700 dark:gray-200"
+            >
+                <SendIcon classString="w-5 h-5 " />
             </button>
         </div>
     </div>
 </div>
-
 
 <style>
     .link-card-grid {
@@ -65,3 +67,22 @@ import { SendIcon } from "~/components/icons/send-icon";
         padding: -1;
     }
 </style>
+
+<script>
+    function handleClick(e: MouseEvent) {
+        console.log("On Submit Function ", e);
+    }
+
+    if (document) {
+
+        const button = document.getElementById("btn-submit");
+        if (button) {
+
+            button.addEventListener("click", handleClick);
+        }
+
+    }
+
+
+
+</script>
