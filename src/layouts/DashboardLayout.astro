@@ -1,6 +1,6 @@
 ---
 import Sidebar from "~/components/template/Sidebar.astro";
-import Home from "~/pages/main-page.astro";
+import { MainPage } from "~/pages/main-page";
 const isUserLoggedIn = false;
 ---
 
@@ -9,7 +9,7 @@ const isUserLoggedIn = false;
         <Sidebar />
     </aside>
     <main class="w-full h-full sm:w-5/6">
-        <Home /> 
+        <MainPage /> 
     </main>
     <script>
         const menuButton = document.getElementById("menu-button");
