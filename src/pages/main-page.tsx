@@ -2,12 +2,16 @@ import { Card } from "~/components/molecues/Card";
 import { MenuIcon } from "~/components/icons/menu-icons";
 import { SendIcon } from "~/components/icons/send-icon";
 import { SERVER_URL } from "~/config";
+import type { MouseEventHandler } from "react";
 
 
 export const MainPage = () => {
 
-  function sendPrompt(prompt: string) {
-    const request_url = SERVER_URL + "gpt";
+  function onSendClick() {
+  
+    console.log("On Send Click")
+
+    const request_url = SERVER_URL + "/gpt";
 
     fetch(request_url, { method: "POST" })
       .then((res) => {
@@ -71,7 +75,7 @@ export const MainPage = () => {
         >
         </textarea>
         <button
-          id="btn-submit"
+          onClick={onSendClick}
           className="btn p-2 text-gray-200 hover:text-gray-800 absolute right-2 bg-gray-700 dark:gray-200"
         >
           <SendIcon classString="w-5 h-5 " />
