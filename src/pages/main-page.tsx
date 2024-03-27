@@ -59,7 +59,7 @@ export const MainPage = () => {
   };
 
   return (
-    <div className="relative overflow-scroll w-full h-full flex flex-col items-streach justify-between p-8 bg-gray-800">
+    <div className="relative overflow-scroll w-full h-full flex flex-col items-center justify-between p-8 bg-gray-800">
       {/* flex item */}
       <MenuIcon className="absolute left-4 top-4 sm:hidden" />
       {/* flex Item */}
@@ -110,7 +110,7 @@ export const MainPage = () => {
         })}
       </ul>
       {/* Fixed Item Not flex element */}
-      <div className="w-1/3 absolute bottom-0 gap-2 flex justify-center items-center">
+      <div className="w-2/4 absolute bottom-0 gap-2 flex justify-center items-center">
         <form onSubmit={onSendClick} className="w-full h-full">
           <input
             type="text"
@@ -118,7 +118,8 @@ export const MainPage = () => {
             onChange={(e) => setCurrentText(e.target.value)}
             className="w-full h-full rounded-xl text-gray-700 p-4 text-sm font-bold"
             placeholder="Type your message..."
-          ></input>
+          >
+          </input>
           <button
             onClick={onSendClick}
             className="btn p-2 border-0 text-gray-800 absolute right-3 top-1/2 -translate-y-1/2 dark:gray-200"
