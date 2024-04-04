@@ -5,25 +5,36 @@ const isUserLoggedIn = false;
 ---
 
 <div
-    class="flex flex-col w-full h-full justify-between p-2 sm:p-8 bg-gray-600 shadow-xl drop-shadow-xl"
+  class="flex flex-col w-full h-full justify-between p-2 sm:p-8 bg-gray-600 shadow-xl drop-shadow-xl"
 >
-    <!-- Header Contaiiner -->
-    <a href="/" class="flex w-auto gap-2 p-2 rounded-full bg-gray-700">
-        <Image alt="Logo" src="/logo.webp" width={30} height={30} />
-        <div>
-            <h1 class="font-black text-lg">
-                Solvent<span class="text-orange-700">.</span>Life™
-            </h1>
-        </div>
-    </a>
-    <!-- Footer Container -->
+  <!-- Header Contaiiner -->
+  <a href="/" class="flex w-auto gap-2 p-2 rounded-full bg-gray-700">
+    <Image alt="Logo" src="/logo.webp" width={30} height={30} />
+    <div>
+      <h1 class="font-black text-lg">
+        Solvent<span class="text-orange-700">.</span>Life™
+      </h1>
+    </div>
+  </a>
+  <!-- Footer Container -->
+  <div>
     <button class="flex gap-2 hover:scale-110 transform transition-transform">
-        {
-            isUserLoggedIn && (
-                <Image alt="Logo" src="/logo.webp" width={30} height={30} />
-            )
-        }
-        <UserCircle />
-        Sign in
+      {
+        isUserLoggedIn && (
+          <Image alt="Logo" src="/logo.webp" width={30} height={30} />
+        )
+      }
+      <UserCircle />
+      Sign in
     </button>
+    <button class="flex gap-2 hover:scale-110 transform transition-transform">
+      {
+        isUserLoggedIn && (
+          <Image alt="Logo" src="/logo.webp" width={30} height={30} />
+        )
+      }
+      <UserCircle />
+      Sign in
+    </button>
+  </div>
 </div>
