@@ -17,7 +17,6 @@ export const MainPage = () => {
       // "loremipmsum her;akwljsd;faskdlj a;sldkjasdfasdfasdf Congested Name of thema of there paper asfd quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto est rerum tempore vitae sequi sint nihil reprehenderit dolor beatae ea dolores neque fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis qui aperiam non debitis possimus qui neque nisi nulla et iusto sed quo iure voluptatem occaecati omnis eligendi aut ad voluptatem doloribus vel accusantium quis pariatur molestiae porro eius odio et labore et velit aut ullam et saepe reiciendis voluptatem adipisci sit amet autem assumenda provident rerum culpa quis hic commodi nesciunt rem tenetur doloremque ipsam iure quis sunt voluptatem rerum illo velit repudiandae veniam quaerat sunt sed alias aut fugiat sit autem sed est voluptatem omnis possimus esse voluptatibus quis est aut tenetur dolor neque ut aspernatur corporis harum nihil quis provident sequi mollitia nobis aliquid molestiae perspiciatis et ea nemo ab reprehenderit accusantium quas voluptate dolores velit et doloremque molestiae dolore placeat quibusdam ea quo vitae magni quis enim qui quis quo nemo aut saepe quidem repellat excepturi ut quia sunt ut sequi eos ea sed quas dignissimos aperiam dolorem qui eum facilis quibusdam animi sint suscipit qui sint possimus cum quaerat magni maiores excepturi ipsam ut commodi dolor voluptatum modi aut vitae consectetur animi nesciunt iure dolore enim quia ad veniam autem ut quam aut nobis et est aut quod aut provident voluptas autem voluptas quo et expedita modi cum officia vel magni doloribus qui repudiandae vero nisi sit quos veniam quod sed accusamus veritatis error delectus reiciendis molestiae occaecati non minima eveniet qui voluptatibus accusamus in eum beatae sit vel qui neque voluptates ut commodi qui incidunt ut animi commodi itaque id aut magnam praesentium quia et ea odit et ea voluptas et sapiente quia nihil amet occaecati quia id voluptatem incidunt ea est distinctio odio aut dicta possimus sint mollitia voluptas commodi quo doloremque iste corrupti reiciendis voluptatem eius rerum sit cumque quod eligendi laborum minima perferendis recusandae assumenda consectetur porro architecto ipsum ipsam fuga et accusamus dolorum perferendis illo voluptas non doloremque neque facere ad qui dolorum molestiae beatae sed aut voluptas totam sit illum reprehenderit quos placeat velit minima officia dolores impedit repudiandae molestiae nam voluptas recusandae quis delectus officiis harum fugiat vitae suscipit nam nisi quo aperiam aut asperiores eos fugit maiores voluptatibus quia voluptatem quis ullam qui in alias quia est consequatur magni mollitia accusamus ea nisi voluptate dicta eos voluptas et aut odit natus earum aspernatur fuga molestiae ullam deserunt ratione qui eos qui nihil ratione",
     ])
 
-
   const [ currentText, setCurrentText ] = useState<string>("")
 
   function resetField() {
@@ -46,7 +45,6 @@ export const MainPage = () => {
         setResults((old) => {
           return [...old, ...body.map((each: any) => each.body)]
         })
-
         
       });
   }
@@ -59,7 +57,7 @@ export const MainPage = () => {
   };
 
   return (
-    <div className="relative gap-4 w-full h-full flex flex-col items-center justify-between p-8 bg-gray-800">
+    <div className="relative gap-4 w-full h-full flex flex-col items-center justify-between p-8 bg-page">
       {/* flex item */}
       <MenuIcon className="absolute left-4 top-4 sm:hidden" />
       {/* flex Item */}
@@ -110,7 +108,7 @@ export const MainPage = () => {
             onChange={(e) => setCurrentText(e.target.value)}
             className="w-full h-full rounded-xl text-gray-700 p-4 text-sm font-bold"
             placeholder="Type your message..."
-          ></input>
+          />
           <button
             onClick={onSendClick}
             className="btn p-2 border-0 text-gray-800 absolute right-3 top-1/2 -translate-y-1/2 dark:gray-200"
@@ -123,4 +121,3 @@ export const MainPage = () => {
   );
 
 }
-

@@ -1,7 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "/home/sanjay/projects/web/solvent-life",
+    "baseUrl": ".",
     "paths": {
       "~/*": [
         "src/*"
