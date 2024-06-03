@@ -5,9 +5,7 @@ import { SERVER_URL } from "~/config";
 import { useState, type MouseEventHandler } from "react";
 import { ChatBox } from "~/components/organisms/chatbox";
 
-
 export const MainPage = () => {
-
 
   const [results, setResults] = useState<Array<string>>( 
     [
@@ -57,7 +55,7 @@ export const MainPage = () => {
   };
 
   return (
-    <div className="relative gap-4 w-full h-full flex flex-col items-center justify-between p-8 bg-page">
+    <div className="relative gap-4 w-full h-full flex flex-col items-center justify-between p-8 bg-primary-dark">
       {/* flex item */}
       <MenuIcon className="absolute left-4 top-4 sm:hidden" />
       {/* flex Item */}

@@ -11,7 +11,7 @@ export const Card: React.FC<LinkCardProps> = ({ href, title, body }) => {
   return (
     <li className="link-card">
       <a href={href}>
-        <h2>
+        <h2 className='text-heading'>
           {title}
           <span>&rarr;</span>
         </h2>
