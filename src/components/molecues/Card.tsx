@@ -9,7 +9,7 @@ interface LinkCardProps {
 
 export const Card: React.FC<LinkCardProps> = ({ href, title, body }) => {
   return (
-    <li className="link-card ">
+    <li className="link-card border drop-shadow-sm">
       <a href={href}>
         <h2 className='text-primary'>
           {title}
