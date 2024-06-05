@@ -21,49 +21,21 @@ const { title } = Astro.props;
     <slot />
   </body>
 </html>
-<style is:global is:inline>
+<style is:global>
 
   :root {
 
-  --font-sans: "InterVariable";
-  --font-serif: "InterVariable";
-  --font-heading: "InterVariable";
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--color-primary)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
 
-  ---color-primary-rgb: red;
-  --color-primary: rgb(var(--color-primary-rgb));
-
-  --color-primary-light-rgb: 100, 149, 255; /* A lighter shade */
-  --color-primary-light: rgb(var(--color-primary-light-rgb));
-
-  --color-primary-dark-rgb: 0, 64, 179; /* A darker shade */
-  --color-primary-dark: rgb(var(--color-primary-dark-rgb));
-
-  --color-secondary-rgb: 255, 114, 55; /* Complementary color */
-  --color-secondary: rgb(var(--color-secondary-rgb));
-
-  --color-secondary-light-rgb: 255, 149, 100; /* A lighter shade of secondary */
-  --color-secondary-light: rgb(var(--color-secondary-light-rgb));
-
-  --color-secondary-dark-rgb: 179, 64, 0; /* A darker shade of secondary */
-  --color-secondary-dark: rgb(var(--color-secondary-dark-rgb));
-
-  --color-neutral-light-rgb: 240, 240, 240; /* Light neutral color */
-  --color-neutral-light: rgb(var(--color-neutral-light-rgb));
-
-  --color-neutral-dark-rgb: 50, 50, 50; /* Dark neutral color */
-  --color-neutral-dark: rgb(var(--color-neutral-dark-rgb));
-
-  --accent: 136, 58, 234;
-  --accent-light: 224, 204, 250;
-  --accent-dark: 49, 10, 101;
-  --accent-gradient: linear-gradient(
-    45deg,
-    rgb(var(--color-primary)),
-    rgb(var(--accent-light)) 30%,
-    white 60%
-  );
-}
-  
   html {
     font-family: system-ui, sans-serif;
     background: #13151a;

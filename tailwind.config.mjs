@@ -6,19 +6,24 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: 'rgb(var(--color-primary-rgb))',
-          light: 'rgb(var(--color-primary-light-rgb))',
-          dark: 'rgb(var(--color-primary-dark-rgb))',
+          DEFAULT: "var(--color-primary)",
+          light: "var(--color-primary)",
+          dark: "var(--color-primary-dark)",
         },
         secondary: {
-          DEFAULT: 'rgb(var(--color-secondary-rgb))',
-          light: 'rgb(var(--color-secondary-light-rgb))',
-          dark: 'rgb(var(--color-secondary-dark-rgb))',
+          DEFAULT: "var(--color-secondary)",
+          light: "var(--color-secondary-light)",
+          dark: "var(--color-secondary-dark)",
         },
         neutral: {
-          light: 'rgb(var(--color-neutral-light-rgb))',
-          dark: 'rgb(var(--color-neutral-dark-rgb))',
+          light: "var(--color-background)",
+          dark: "var(--color-surface)",
         },
+      },
+      backgroundColor: {
+        DEFAULT: "var(--color-background)",
+        light: "var(--color-background)",
+        dark: "var(--color-background-dark)",
       },
     },
   },

@@ -55,7 +55,7 @@ export const MainPage = () => {
   };
 
   return (
-    <div className="relative gap-4 w-full h-full flex flex-col items-center justify-between p-8 bg-primary-dark">
+    <div className="relative gap-4 w-full h-full flex flex-col items-center justify-between p-8 bg dark:bg-dark">
       {/* flex item */}
       <MenuIcon className="absolute left-4 top-4 sm:hidden" />
       {/* flex Item */}
@@ -68,7 +68,7 @@ export const MainPage = () => {
         <div className="my-auto flex gap-4 flex-col items-center">
           <img alt="Logo" src="/logo.webp" width={45} height={45} />
           <p className="font-semibold">How can i help you today?</p>
-          <button className="btn-secondary px-16 font-bold">Log In </button>
+          <button className="btn-primary px-16 font-bold">Log In </button>
         </div>
       )}
       {/* flex Item */}
