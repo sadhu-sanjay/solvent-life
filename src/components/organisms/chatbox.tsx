@@ -11,7 +11,7 @@ export const ChatBox: React.FC<ChatProps> = ({messages, className}) => {
       <ul role="list" className={`overflow-scroll w-1/2 ${className}`}>
         {messages.map((each, index) => {
           return (
-            <li className="text-sm font-medium" key={index}>
+            <li className="text-sm font-medium text-primary" key={index}>
               {each}
             </li>
           );

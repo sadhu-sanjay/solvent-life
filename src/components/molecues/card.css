@@ -15,7 +15,7 @@
     padding: calc(1rem - 1px);
     border-radius: 12px;
     color: white;
-    /* background-color: #23262d; */
+    background-color: var(--color-surface);
     opacity: 0.8;
  }
 
