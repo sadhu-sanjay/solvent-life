@@ -24,6 +24,16 @@ export default {
         DEFAULT: "var(--color-background)",
         light: "var(--color-background)",
         dark: "var(--color-background-dark)",
+        surface: 'var(--color-surface)',
+        'surface-dark': 'var(--color-surface-dark)'
+      },
+      textColor: {
+        primary: 'var(--color-text-primary)',
+        'primary-dark': 'var(--color-text-primary-dark)',
+        secondary: 'var(--color-text-secondary)',
+        'secondary-dark': 'var(--color-text-secondary-dark)',
+        muted: 'var(--color-text-muted)',
+        'muted-dark': 'var(--color-text-muted-dark)',
       },
     },
   },

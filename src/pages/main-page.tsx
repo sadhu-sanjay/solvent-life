@@ -55,7 +55,7 @@ export const MainPage = () => {
   };
 
   return (
-    <div className="relative gap-4 w-full h-full flex flex-col items-center justify-between p-8 bg dark:bg-dark">
+    <div className="relative gap-4 w-full h-full flex flex-col items-center justify-between p-8 bg-neutral-light">
       {/* flex item */}
       <MenuIcon className="absolute left-4 top-4 sm:hidden" />
       {/* flex Item */}
