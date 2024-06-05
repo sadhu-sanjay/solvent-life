@@ -59,7 +59,7 @@ export const MainPage = () => {
       {/* flex item */}
       <MenuIcon className="absolute left-4 top-4 sm:hidden" />
       {/* flex Item */}
-      <div className="w-full flex justify-between">
+      <div className="w-full flex justify-between  items-center">
         <button className="btn-secondary font-semibold">Sign up</button>
         <img alt="Logo" src="/logo.webp" width={45} height={45} />
       </div>
@@ -98,13 +98,14 @@ export const MainPage = () => {
       )}
       { results.length > 0 && <ChatBox className={`mb-auto`} messages={results} />}
       {/* Fixed Item Not flex element */}
-      <div className="w-2/4 gap-2 flex justify-center items-center">
+      <div className="w-2/4 gap-2 flex justify-center items-center relative">
         <form onSubmit={onSendClick} className="w-full h-full">
           <input
             type="text"
             value={currentText}
             onChange={(e) => setCurrentText(e.target.value)}
-            className="w-full h-full rounded-xl text-gray-700 p-4 text-sm font-bold"
+            className="w-full h-full rounded-xl text-gray-700 p-4 text-sm font-bold 
+            bg-surface shadow-md "
             placeholder="Type your message..."
           />
           <button
